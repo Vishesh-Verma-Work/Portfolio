@@ -1,0 +1,105 @@
+:root {
+    --dark-bg: #0A1929;
+    --dark-card: #102A43;
+    --primary-blue: #1E88E5;
+    --light-blue: #64B5F6;
+    --text-white: #FFFFFF;
+    --text-light: #E0E0E0;
+    --text-muted: #90A4AE;
+    --accent-gradient: linear-gradient(135deg, var(--primary-blue), var(--light-blue));
+  }
+  
+  .about-container {
+    background-color: var(--dark-bg);
+    color: var(--text-light);
+    padding: 50px 20px;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .about-container h1 {
+    text-align: center;
+    color: var(--text-white);
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+  }
+  
+  .about-content {
+    display: flex;
+    gap: 40px;
+    max-width: 1100px;
+    margin: auto;
+    flex-wrap: wrap;
+  }
+  
+  .about-left {
+    flex: 1;
+    min-width: 260px;
+    text-align: center;
+  }
+  
+  .profile-pic {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 4px solid var(--primary-blue);
+    object-fit: cover;
+    margin-bottom: 20px;
+  }
+  
+  .contact-info {
+    background-color: var(--dark-card);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(30, 136, 229, 0.2);
+  }
+  
+  .contact-info h3 {
+    color: var(--light-blue);
+    margin-bottom: 10px;
+  }
+  
+  .contact-info p {
+    margin: 6px 0;
+    font-size: 0.95rem;
+  }
+  
+  .about-right {
+    flex: 2;
+    min-width: 300px;
+  }
+  
+  .edu-section, .skills-section {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: var(--dark-card);
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(100, 181, 246, 0.1);
+  }
+  
+  .edu-section h2, .skills-section h2 {
+    color: var(--light-blue);
+    margin-bottom: 10px;
+  }
+  
+  .edu-section p, .skills-section p {
+    line-height: 1.6;
+    font-size: 0.95rem;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .about-content {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .about-left, .about-right {
+      width: 100%;
+    }
+  
+    .profile-pic {
+      width: 200px;
+      height: 200px;
+    }
+  }
+  

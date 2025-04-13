@@ -1,0 +1,102 @@
+:root {
+    --dark-bg: #0A1929;
+    --dark-card: #102A43;
+    --primary-blue: #1E88E5;
+    --light-blue: #64B5F6;
+    --text-white: #FFFFFF;
+    --text-light: #E0E0E0;
+    --text-muted: #90A4AE;
+    --accent-gradient: linear-gradient(135deg, var(--primary-blue), var(--light-blue));
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .header {
+    background-color: var(--dark-bg);
+    color: var(--text-white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+  }
+  
+  .header__logo a {
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: bold;
+    background: var(--accent-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .header__nav {
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .header__link {
+    text-decoration: none;
+    color: var(--text-light);
+    font-size: 1rem;
+    transition: color 0.3s ease;
+    position: relative;
+  }
+  
+  .header__link:hover,
+  .header__link.active {
+    color: var(--primary-blue);
+  }
+  
+  .header__link::after {
+    content: '';
+    display: block;
+    width: 0%;
+    height: 2px;
+    background: var(--accent-gradient);
+    transition: width 0.3s ease;
+    margin-top: 4px;
+  }
+  
+  .header__link:hover::after,
+  .header__link.active::after {
+    width: 100%;
+  }
+  
+  .header__toggle {
+    display: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: var(--text-white);
+  }
+  
+  /* Mobile Responsive */
+  @media (max-width: 768px) {
+    .header__nav {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      flex-direction: column;
+      background-color: var(--dark-card);
+      padding: 1rem 2rem;
+      gap: 1rem;
+    }
+  
+    .header__nav.active {
+      display: flex;
+    }
+  
+    .header__toggle {
+      display: block;
+    }
+  }
+  

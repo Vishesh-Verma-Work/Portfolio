@@ -1,0 +1,18 @@
+.glow-divider {
+    width: 70%;
+    height: 1px;
+    margin: 2rem auto;
+    background: linear-gradient(90deg, rgba(255,255,255,0.2), var(--light-blue), rgba(255,255,255,0.2));
+    box-shadow: 0 0 10px var(--light-blue), 0 0 20px rgba(100, 181, 246, 0.4);
+    border: none;
+    opacity: 0.8;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Responsive glow divider */
+  @media screen and (max-width: 768px) {
+    .glow-divider {
+      width: 85%;
+    }
+  }
+  

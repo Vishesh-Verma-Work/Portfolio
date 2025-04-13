@@ -1,0 +1,78 @@
+:root {
+    --dark-bg: #0A1929;
+    --dark-card: #102A43;
+    --primary-blue: #1E88E5;
+    --light-blue: #64B5F6;
+    --text-white: #FFFFFF;
+    --text-light: #E0E0E0;
+    --text-muted: #90A4AE;
+    --accent-gradient: linear-gradient(135deg, var(--primary-blue), var(--light-blue));
+  }
+  
+  .contact-container {
+    background-color: var(--dark-card);
+    padding: 40px;
+    max-width: 600px;
+    margin: 50px auto;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    color: var(--text-white);
+  }
+  
+  .contact-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--text-white);
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .contact-form label {
+    font-weight: bold;
+    color: var(--text-light);
+  }
+  
+  .contact-form input[type="text"],
+  .contact-form input[type="email"],
+  .contact-form textarea {
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: #1c2b40;
+    color: var(--text-white);
+    resize: none;
+  }
+  
+  .contact-form input[type="text"]:focus,
+  .contact-form input[type="email"]:focus,
+  .contact-form textarea:focus {
+    outline: 2px solid var(--primary-blue);
+  }
+  
+  .send-btn {
+    padding: 12px;
+    background: var(--accent-gradient);
+    color: var(--text-white);
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+  }
+  
+  .send-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(30, 136, 229, 0.4);
+  }
+  
+  .status-message {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 1rem;
+    color: var(--text-light);
+  }
+  
