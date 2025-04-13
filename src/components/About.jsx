@@ -27,9 +27,9 @@ const About = () => {
             <h2>B.Tech - Computer Science 2022-26</h2>
             <p><strong>College:</strong>IMSEC Ghaziabad</p>
             <p><strong>1st Sem SGPA : </strong> 8.45</p>
-            <p><strong>2st Sem SGPA : </strong> 8.64</p>
-            <p><strong>3st Sem SGPA : </strong> 8.92</p>
-            <p><strong>4st Sem SGPA : </strong> 8.30</p>
+            <p><strong>2nd Sem SGPA : </strong> 8.64</p>
+            <p><strong>3rd Sem SGPA : </strong> 8.92</p>
+            <p><strong>4th Sem SGPA : </strong> 8.30</p>
           </section>
 
           <section className="skills-section">

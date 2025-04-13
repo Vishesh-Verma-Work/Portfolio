@@ -32,9 +32,9 @@ const Landing = () => {
               <a target="_blank" href="https://drive.google.com/drive/folders/1DglD7f_OHgQJlZFSC8CrZk3OJs1hG4a2?usp=sharing" className="landing-page__btn">
                 Resume
               </a>
-              <a href="/about" className="landing-page__btn">
+              {/* <a href="/about" className="landing-page__btn">
                 Contact
-              </a>
+              </a> */}
             </div>
           </div>
 
